@@ -60,6 +60,57 @@ area = length * width
 print("The area of the rectangle is:", area)
 `
 
+`
+# Convert Celsius to Fahrenheit
+celsius = float(input("Enter temperature in Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print("Temperature in Fahrenheit:", fahrenheit)
+cel = (fahrenheit - 32) * 5/9
+print("Temperature in Celsius:", cel)
+
+# Simple Calculator
+num1 = float(input("Enter the first number: "))
+operator = input("Enter the operator (+, -, *, /): ")
+num2 = float(input("Enter the second number: "))
+
+if operator == "+":
+    result = num1 + num2
+elif operator == "-":
+    result = num1 - num2
+elif operator == "*":
+    result = num1 * num2
+elif operator == "/":
+    result = num1 / num2
+else:
+    print("Invalid operator")
+    exit()
+
+print("Result:", result)
+# Print the first 10 even numbers using a while loop
+count = 1
+while count <= 10:
+    if count % 2 == 0:
+        print(count)
+    count += 1
+fruits = ["Apple", "Orange", "Watermelon", "Grapes", "pomegranate"]
+print(fruits[-1])
+print(fruits[:-1])
+print(fruits[2:5])
+print(fruits[2])
+print(fruits[3:])
+
+squares = [num**2 for num in range(1, 11)]
+print(squares)
+
+# Find common elements between two lists.
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7, 8]
+common_elements = [elem for elem in list1 if elem in list2]
+print("Common elements:", common_elements)
+
+
+`
+
 
 
 
